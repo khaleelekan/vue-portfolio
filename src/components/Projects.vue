@@ -118,7 +118,7 @@ const projects = [
     'Timetable and scheduling',
     'Role-based access control'
   ]
-}
+},
   {
     id: 3,
     title: 'Real Chat',
