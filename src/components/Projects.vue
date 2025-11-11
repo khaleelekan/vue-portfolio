@@ -89,7 +89,7 @@ const projects = [
     title: 'CoordConvert',
     description: 'Advanced geographic coordinate conversion tool with interactive mapping and multiple format support',
     image: '/api/placeholder/400/250?text=CoordConvert',
-    technologies: ['Vue.js', 'Leaflet.js', 'GIS', 'JavaScript', 'PWA', 'Tailwind CSS'],
+    technologies: ['Next.js', 'Leaflet.js', 'GIS', 'JavaScript', 'PWA', 'Tailwind CSS','Supabase'],
     category: 'GIS',
     demoUrl: 'https://coordconvert.netlify.app',
     githubUrl: 'https://github.com/yourusername/coordconvert',
@@ -101,23 +101,24 @@ const projects = [
       'Real-time coordinate conversion'
     ]
   },
-  {
-    id: 2,
-    title: 'MIRATH APP',
-    description: 'Islamic inheritance calculation platform with responsive dashboards and secure workflows',
-    image: '/api/placeholder/400/250?text=MIRATH+APP',
-    technologies: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Zustand'],
-    category: 'Full-Stack',
-    demoUrl: '#',
-    githubUrl: '#',
-    features: [
-      'Inheritance calculation engine',
-      'Firebase authentication',
-      'Real-time data updates',
-      'Responsive dashboard',
-      'Secure form handling'
-    ]
-  },
+{
+  id: 2,
+  title: 'ACADAPOWER',
+  description: 'Comprehensive school management system enabling educational institutions to digitize operations and streamline learning',
+  image: '/api/placeholder/400/250?text=ACADAPOWER',
+  technologies: ['Vue.js', 'JavaScript', 'REST APIs', 'CSS3', 'Responsive Design'],
+  category: 'Full-Stack',
+  demoUrl: 'https://acadapower.com/',
+  githubUrl: '#',
+  features: [
+    'Student enrollment and management',
+    'Attendance tracking system',
+    'Grade and report management',
+    'Parent-teacher communication portal',
+    'Timetable and scheduling',
+    'Role-based access control'
+  ]
+}
   {
     id: 3,
     title: 'Real Chat',
