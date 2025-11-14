@@ -23,7 +23,7 @@
               <div class="flex flex-col items-center space-y-6 text-center">
                 <div class="relative">
                   <div class="w-48 h-48 overflow-hidden border-4 border-white shadow-2xl rounded-2xl dark:border-gray-700">
-                    <img src="../assets/avatar.jpg" alt="Khalil - Full Stack Developer" class="object-cover w-full h-full transition duration-700 transform group-hover:scale-110">
+                    <img src=".../assets/images/headshot1.jpg" alt="Khalil - Full Stack Developer" class="object-cover w-full h-full transition duration-700 transform group-hover:scale-110">
                   </div>
                   <div class="absolute flex items-center justify-center border-2 border-white shadow-lg -bottom-3 -right-3 w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl dark:border-gray-800">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,29 +54,24 @@
               <div class="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
             </div>
           </div>
-        </div>
-        
-        <!-- Skills & Bio -->
-        <div class="space-y-8">
-          <!-- Enhanced Bio -->
-          <div class="space-y-6">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">My Journey</h3>
-            <div class="space-y-4 leading-relaxed text-gray-600 dark:text-gray-300">
-              <p class="flex items-start">
-                <span class="mt-1 mr-3 text-primary-500">▸</span>
-                Full-stack developer specializing in <strong class="text-gray-900 dark:text-white">Vue.js, React, and Node.js</strong> with a passion for creating responsive, performant web applications.
-              </p>
-              <p class="flex items-start">
-                <span class="mt-1 mr-3 text-primary-500">▸</span>
-                <strong class="text-gray-900 dark:text-white">GIS expert</strong> building sophisticated mapping applications and spatial data visualizations that solve real-world challenges.
-              </p>
-              <p class="flex items-start">
-                <span class="mt-1 mr-3 text-primary-500">▸</span>
-                Proven track record of delivering <strong class="text-gray-900 dark:text-white">scalable solutions</strong> from concept to deployment, with expertise in modern development workflows.
-              </p>
+          
+          <!-- Tech Stack Tags - Moved to left column -->
+          <div class="pt-4">
+            <h4 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Tech Stack</h4>
+            <div class="flex flex-wrap gap-3">
+              <span 
+                v-for="tech in techStack" 
+                :key="tech"
+                class="px-4 py-2 text-sm font-medium text-gray-700 transition-all duration-300 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:text-gray-300 dark:border-gray-600 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-600"
+              >
+                {{ tech }}
+              </span>
             </div>
           </div>
-
+        </div>
+        
+        <!-- Skills Section - Now takes full right column -->
+        <div class="space-y-8">
           <!-- Enhanced Skills -->
           <div class="space-y-6">
             <div class="flex items-center justify-between">
@@ -109,20 +104,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Tech Stack Tags -->
-          <div class="pt-4">
-            <h4 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Tech Stack</h4>
-            <div class="flex flex-wrap gap-3">
-              <span 
-                v-for="tech in techStack" 
-                :key="tech"
-                class="px-4 py-2 text-sm font-medium text-gray-700 transition-all duration-300 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:text-gray-300 dark:border-gray-600 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-600"
-              >
-                {{ tech }}
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -144,7 +125,7 @@ const skills = [
 ]
 
 const techStack = [
-  'Vue.js', 'React', 'Next.js', 'Node.js', 'Python',
+  'Vue.js', 'React', 'Next.js', 'Nest','Node.js', 'Python',
   'PostgreSQL', 'MongoDB', 'Firebase', 'Docker', 'AWS',
   'Leaflet', 'Mapbox', 'Git', 'Tailwind', 'TypeScript'
 ]

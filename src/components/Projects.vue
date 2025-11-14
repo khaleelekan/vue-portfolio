@@ -80,6 +80,10 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+// Import your images properly
+// import coorconvertImage from '../assets/images/coorconvert.png'
+// import acadapowerImage from '../assets/images/acadapower.png'
+
 const categories = ['All', 'GIS', 'Full-Stack', 'Web', 'Mobile']
 const activeCategory = ref('All')
 
@@ -88,11 +92,11 @@ const projects = [
     id: 1,
     title: 'CoordConvert',
     description: 'Advanced geographic coordinate conversion tool with interactive mapping and multiple format support',
-    image: '/api/placeholder/400/250?text=CoordConvert',
+    image: 'images/coordconvert.png',
     technologies: ['Next.js', 'Leaflet.js', 'GIS', 'JavaScript', 'PWA', 'Tailwind CSS','Supabase'],
     category: 'GIS',
     demoUrl: 'https://coordconvert.netlify.app',
-    githubUrl: 'https://github.com/yourusername/coordconvert',
+    githubUrl: 'https://github.com/khaleelekan/coodconvert-il',
     features: [
       'Multiple coordinate formats (DMS, Decimal, UTM, MGRS)',
       'Interactive map visualization',
@@ -101,29 +105,29 @@ const projects = [
       'Real-time coordinate conversion'
     ]
   },
-{
-  id: 2,
-  title: 'ACADAPOWER',
-  description: 'Comprehensive school management system enabling educational institutions to digitize operations and streamline learning',
-  image: '/api/placeholder/400/250?text=ACADAPOWER',
-  technologies: ['Vue.js', 'JavaScript', 'REST APIs', 'CSS3', 'Responsive Design'],
-  category: 'Full-Stack',
-  demoUrl: 'https://acadapower.com/',
-  githubUrl: '#',
-  features: [
-    'Student enrollment and management',
-    'Attendance tracking system',
-    'Grade and report management',
-    'Parent-teacher communication portal',
-    'Timetable and scheduling',
-    'Role-based access control'
-  ]
-},
+  {
+    id: 2,
+    title: 'ACADAPOWER',
+    description: 'Comprehensive school management system enabling educational institutions to digitize operations and streamline learning',
+    image: 'images/acadapower.png',
+    technologies: ['Vue.js', 'JavaScript', 'REST APIs', 'CSS3', 'Responsive Design'],
+    category: 'Full-Stack',
+    demoUrl: 'https://acadapower.com/',
+    githubUrl: '#',
+    features: [
+      'Student enrollment and management',
+      'Attendance tracking system',
+      'Grade and report management',
+      'Parent-teacher communication portal',
+      'Timetable and scheduling',
+      'Role-based access control'
+    ]
+  },
   {
     id: 3,
     title: 'Real Chat',
     description: 'Real-time chat application with authentication and message synchronization',
-    image: '/api/placeholder/400/250?text=Real+Chat',
+    image: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
     technologies: ['React', 'Firebase', 'Zustand', 'Firestore', 'Vercel'],
     category: 'Web',
     demoUrl: '#',
@@ -140,7 +144,7 @@ const projects = [
     id: 4,
     title: 'School Management Dashboard',
     description: 'Comprehensive school administration system with role-based access and analytics',
-    image: '/api/placeholder/400/250?text=School+Dashboard',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
     technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'Docker', 'TypeScript'],
     category: 'Full-Stack',
     demoUrl: '#',
@@ -157,11 +161,11 @@ const projects = [
     id: 5,
     title: 'Portfolio Website',
     description: 'Modern, responsive portfolio website showcasing projects and skills',
-    image: '/api/placeholder/400/250?text=Portfolio',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
     technologies: ['Vue.js', 'Tailwind CSS', 'Netlify', 'JavaScript'],
     category: 'Web',
     demoUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/khaleelekan',
     features: [
       'Responsive design',
       'Dark mode support',
@@ -174,7 +178,7 @@ const projects = [
     id: 6,
     title: 'GIS Data Visualizer',
     description: 'Interactive platform for visualizing and analyzing geographic data sets',
-    image: '/api/placeholder/400/250?text=GIS+Visualizer',
+    image: 'https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
     technologies: ['Vue.js', 'Mapbox', 'GeoJSON', 'D3.js', 'JavaScript'],
     category: 'GIS',
     demoUrl: '#',

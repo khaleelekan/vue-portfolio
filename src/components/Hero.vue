@@ -69,7 +69,7 @@
             </span>
           </button>
           
-          <button 
+           <button 
             class="relative flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold transition-all duration-300 border-2 group btn-secondary rounded-2xl border-primary-200 dark:border-gray-600 hover:border-primary-300 dark:hover:border-primary-500 hover:scale-105"
             @click="scrollToSection('#contact')"
           >
@@ -95,21 +95,6 @@
             <div class="text-sm text-gray-600 dark:text-gray-400">Client Satisfaction</div>
           </div>
         </div>
-      </div>
-      
-      <!-- Enhanced Scroll Indicator -->
-      <div class="absolute transform -translate-x-1/2 bottom-8 left-1/2">
-        <button 
-          @click="scrollToSection('#about')" 
-          class="flex flex-col items-center text-gray-400 transition-all duration-300 -z-10 group hover:text-primary-600"
-        >
-          <span class="mb-2 text-sm transition-opacity duration-300 opacity-0 group-hover:opacity-100">Explore More</span>
-          <div class="animate-bounce">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-          </div>
-        </button>
       </div>
     </div>
 
