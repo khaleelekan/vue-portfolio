@@ -23,7 +23,7 @@
               <div class="flex flex-col items-center space-y-6 text-center">
                 <div class="relative">
                   <div class="w-48 h-48 overflow-hidden border-4 border-white shadow-2xl rounded-2xl dark:border-gray-700">
-                    <img src=".../assets/headshot1.jpg" alt="Khalil - Full Stack Developer" class="object-cover w-full h-full transition duration-700 transform group-hover:scale-110">
+                    <img src="../assets/headshot1.jpg" alt="Khalil - Full Stack Developer" class="object-cover w-full h-full transition duration-700 transform group-hover:scale-110">
                   </div>
                   <div class="absolute flex items-center justify-center border-2 border-white shadow-lg -bottom-3 -right-3 w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl dark:border-gray-800">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
