@@ -130,7 +130,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80',
     technologies: ['React', 'Firebase', 'Zustand', 'Firestore', 'Vercel'],
     category: 'Web',
-    demoUrl: '#',
+    demoUrl: 'https://forrealchats.netlify.app/',
     githubUrl: '#',
     features: [
       'Real-time messaging',
