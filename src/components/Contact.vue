@@ -1,45 +1,45 @@
 <template>
-  <section id="contact" class="relative py-20 overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
+  <section id="contact" class="relative py-12 overflow-hidden md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
     <!-- Background Elements -->
-    <div class="absolute top-0 left-0 rounded-full w-72 h-72 bg-primary-500 mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-    <div class="absolute top-0 right-0 bg-purple-500 rounded-full w-72 h-72 mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-    <div class="absolute bottom-0 bg-pink-500 rounded-full left-1/2 w-72 h-72 mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-0 left-0 w-48 h-48 rounded-full md:w-72 md:h-72 bg-primary-500 mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+    <div class="absolute top-0 right-0 w-48 h-48 bg-purple-500 rounded-full md:w-72 md:h-72 mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+    <div class="absolute bottom-0 w-48 h-48 bg-pink-500 rounded-full left-1/4 md:left-1/2 md:w-72 md:h-72 mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
     
-    <div class="container relative z-10 px-6 mx-auto">
-      <div class="mb-16 text-center">
+    <div class="container relative z-10 px-4 mx-auto sm:px-6">
+      <div class="mb-12 text-center md:mb-16">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="max-w-2xl mx-auto section-subtitle">
+        <p class="section-subtitle">
           Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
         </p>
       </div>
       
-      <div class="grid items-start max-w-6xl gap-12 mx-auto lg:grid-cols-2">
+      <div class="grid items-start max-w-6xl gap-8 mx-auto lg:gap-12 lg:grid-cols-2">
         <!-- Contact Information - Enhanced Card -->
-        <div class="space-y-8">
-          <div class="p-8 border shadow-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border-white/20">
-            <h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Get in Touch</h3>
-            <p class="mb-8 leading-relaxed text-gray-600 dark:text-gray-300">
+        <div class="space-y-6 md:space-y-8">
+          <div class="p-6 border shadow-xl md:p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border-white/20">
+            <h3 class="mb-2 text-xl font-bold text-gray-900 md:text-2xl dark:text-white">Get in Touch</h3>
+            <p class="mb-6 text-sm leading-relaxed text-gray-600 md:mb-8 md:text-base dark:text-gray-300">
               I'm currently available for freelance work and exciting new opportunities. Whether you have a project in mind or just want to say hello, I'd love to hear from you!
             </p>
             
-            <div class="space-y-6">
+            <div class="space-y-4 md:space-y-6">
               <!-- Email with enhanced interaction -->
-              <div class="group flex items-center space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-800 hover:from-blue-100 hover:to-indigo-100 dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-[1.02]">
-                <div class="flex items-center justify-center transition-shadow duration-300 shadow-lg w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl group-hover:shadow-xl">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="group flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-800 hover:from-blue-100 hover:to-indigo-100 dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-[1.02]">
+                <div class="flex items-center justify-center w-10 h-10 transition-shadow duration-300 shadow-lg md:w-14 md:h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl group-hover:shadow-xl">
+                  <svg class="w-5 h-5 text-white md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
-                <div class="flex-1">
-                  <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">Email</p>
+                <div class="flex-1 min-w-0">
+                  <p class="mb-1 text-xs font-medium text-gray-500 md:text-sm dark:text-gray-400">Email</p>
                   <div class="flex items-center justify-between">
-                    <p class="font-semibold text-gray-700 dark:text-gray-300">kalilulekan@gmail.com</p>
+                    <p class="text-sm font-semibold text-gray-700 truncate dark:text-gray-300 md:text-base">kalilulekan@gmail.com</p>
                     <button 
                       @click="copyEmail"
-                      class="p-2 transition-all duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-600 hover:shadow-md group-hover:bg-primary-50 dark:group-hover:bg-primary-900/30"
+                      class="flex-shrink-0 p-1.5 md:p-2 transition-all duration-300 bg-white rounded-lg shadow-sm dark:bg-gray-600 hover:shadow-md group-hover:bg-primary-50 dark:group-hover:bg-primary-900/30 ml-2"
                       title="Copy email"
                     >
-                      <svg class="w-4 h-4 text-gray-600 dark:text-gray-300 group-hover:text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-3.5 h-3.5 md:w-4 md:h-4 text-gray-600 dark:text-gray-300 group-hover:text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                       </svg>
                     </button>
@@ -48,33 +48,33 @@
               </div>
               
               <!-- Location with map pin -->
-              <div class="group flex items-center space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-800 hover:from-green-100 hover:to-emerald-100 dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-[1.02]">
-                <div class="flex items-center justify-center transition-shadow duration-300 shadow-lg w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl group-hover:shadow-xl">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="group flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-800 hover:from-green-100 hover:to-emerald-100 dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-[1.02]">
+                <div class="flex items-center justify-center w-10 h-10 transition-shadow duration-300 shadow-lg md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl group-hover:shadow-xl">
+                  <svg class="w-5 h-5 text-white md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   </svg>
                 </div>
-                <div>
-                  <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">Location</p>
-                  <p class="font-semibold text-gray-700 dark:text-gray-300">Lagos, Nigeria</p>
+                <div class="min-w-0">
+                  <p class="mb-1 text-xs font-medium text-gray-500 md:text-sm dark:text-gray-400">Location</p>
+                  <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-base">Lagos, Nigeria</p>
                 </div>
               </div>
             </div>
             
             <!-- Social Links - Enhanced -->
-            <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
-              <h4 class="mb-4 text-lg font-semibold text-center text-gray-900 dark:text-white">Follow My Journey</h4>
-              <div class="flex justify-center space-x-4">
+            <div class="pt-6 mt-6 border-t border-gray-200 md:pt-8 md:mt-8 dark:border-gray-700">
+              <h4 class="mb-3 text-base font-semibold text-center text-gray-900 md:mb-4 md:text-lg dark:text-white">Follow My Journey</h4>
+              <div class="flex justify-center space-x-3 md:space-x-4">
                 <a 
                   v-for="social in socialLinks" 
                   :key="social.name"
                   :href="social.url" 
                   target="_blank"
-                  class="flex items-center justify-center w-12 h-12 transition-all duration-300 transform bg-white shadow-lg group dark:bg-gray-700 rounded-xl hover:shadow-xl hover:scale-110 hover:bg-primary-600 dark:hover:bg-primary-600"
+                  class="flex items-center justify-center w-10 h-10 transition-all duration-300 transform bg-white shadow-lg md:w-12 md:h-12 group dark:bg-gray-700 rounded-xl hover:shadow-xl hover:scale-110 hover:bg-primary-600 dark:hover:bg-primary-600"
                   :title="social.name"
                 >
-                  <svg class="w-5 h-5 text-gray-600 transition-colors duration-300 dark:text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-4 h-4 text-gray-600 transition-colors duration-300 md:w-5 md:h-5 dark:text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path :d="social.icon"></path>
                   </svg>
                 </a>
@@ -83,27 +83,27 @@
           </div>
 
           <!-- Quick Stats -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 text-center border shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border-white/20">
-              <div class="mb-1 text-2xl font-bold text-primary-600 dark:text-primary-400">24h</div>
-              <div class="text-sm text-gray-600 dark:text-gray-400">Response Time</div>
+          <div class="grid grid-cols-2 gap-3 md:gap-4">
+            <div class="p-3 text-center border shadow-lg md:p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border-white/20">
+              <div class="mb-1 text-lg font-bold md:text-2xl text-primary-600 dark:text-primary-400">24h</div>
+              <div class="text-xs text-gray-600 md:text-sm dark:text-gray-400">Response Time</div>
             </div>
-            <div class="p-4 text-center border shadow-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border-white/20">
-              <div class="mb-1 text-2xl font-bold text-primary-600 dark:text-primary-400">100%</div>
-              <div class="text-sm text-gray-600 dark:text-gray-400">Project Success</div>
+            <div class="p-3 text-center border shadow-lg md:p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border-white/20">
+              <div class="mb-1 text-lg font-bold md:text-2xl text-primary-600 dark:text-primary-400">100%</div>
+              <div class="text-xs text-gray-600 md:text-sm dark:text-gray-400">Project Success</div>
             </div>
           </div>
         </div>
         
         <!-- Contact Form - Enhanced -->
-        <div class="p-8 border shadow-xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border-white/20">
-          <div class="mb-8 text-center">
-            <h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Send a Message</h3>
-            <p class="text-gray-600 dark:text-gray-300">Let's start a conversation about your project</p>
+        <div class="p-6 border shadow-xl md:p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl border-white/20">
+          <div class="mb-6 text-center md:mb-8">
+            <h3 class="mb-2 text-xl font-bold text-gray-900 md:text-2xl dark:text-white">Send a Message</h3>
+            <p class="text-sm text-gray-600 md:text-base dark:text-gray-300">Let's start a conversation about your project</p>
           </div>
           
-          <form @submit.prevent="submitContactForm" class="space-y-6">
-            <div class="grid gap-6 md:grid-cols-2">
+          <form @submit.prevent="submitContactForm" class="space-y-4 md:space-y-6">
+            <div class="grid gap-4 md:gap-6 md:grid-cols-2">
               <div class="space-y-2">
                 <label for="contact-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your Name</label>
                 <input 
@@ -112,7 +112,7 @@
                   v-model="contactForm.name"
                   required
                   placeholder="Enter your full name"
-                  class="w-full px-4 py-3 placeholder-gray-400 transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
+                  class="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base placeholder-gray-400 transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
                 >
               </div>
               
@@ -124,7 +124,7 @@
                   v-model="contactForm.email"
                   required
                   placeholder="your.email@example.com"
-                  class="w-full px-4 py-3 placeholder-gray-400 transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
+                  class="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base placeholder-gray-400 transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
                 >
               </div>
             </div>
@@ -135,7 +135,7 @@
                 id="subject" 
                 v-model="contactForm.subject"
                 required
-                class="w-full px-4 py-3 transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
+                class="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base transition-all duration-300 border border-gray-200 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
               >
                 <option value="" disabled selected>Select project type</option>
                 <option value="Web Development">Web Development</option>
@@ -150,24 +150,24 @@
               <label for="contact-message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Project Details</label>
               <textarea 
                 id="contact-message" 
-                rows="5"
+                rows="4"
                 v-model="contactForm.message"
                 required
                 placeholder="Tell me about your project, timeline, and any specific requirements..."
-                class="w-full px-4 py-3 placeholder-gray-400 transition-all duration-300 border border-gray-200 resize-none dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
+                class="w-full px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base placeholder-gray-400 transition-all duration-300 border border-gray-200 resize-none dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700/50 dark:text-white"
               ></textarea>
             </div>
             
             <button 
               type="submit" 
               :disabled="isSubmitting"
-              class="btn-primary w-full py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+              class="btn-primary w-full py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
             >
               <span>{{ isSubmitting ? 'Sending...' : 'Send Message' }}</span>
-              <svg v-if="!isSubmitting" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg v-if="!isSubmitting" class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
               </svg>
-              <svg v-else class="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg v-else class="w-4 h-4 md:w-5 md:h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
               </svg>
             </button>
@@ -210,7 +210,6 @@ const socialLinks = [
 const copyEmail = async () => {
   try {
     await navigator.clipboard.writeText('kalilulekan@gmail.com')
-    // Show a nice toast instead of alert
     showNotification('Email copied to clipboard!', 'success')
   } catch (err) {
     console.error('Failed to copy email: ', err)
@@ -222,15 +221,9 @@ const submitContactForm = async () => {
   isSubmitting.value = true
   
   try {
-    // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 2000))
-    
     console.log('Contact form submitted:', contactForm.value)
-    
-    // Reset form
     contactForm.value = { name: '', email: '', subject: '', message: '' }
-    
-    // Show success message
     showNotification('Thank you! Your message has been sent successfully.', 'success')
   } catch (error) {
     showNotification('Failed to send message. Please try again.', 'error')
@@ -240,18 +233,17 @@ const submitContactForm = async () => {
 }
 
 const showNotification = (message, type) => {
-  // You can implement a proper toast notification here
   alert(message)
 }
 </script>
 
 <style scoped>
 .section-title {
-  @apply text-4xl font-bold text-center text-gray-900 dark:text-white mb-4;
+  @apply text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4;
 }
 
 .section-subtitle {
-  @apply text-xl text-center text-gray-600 dark:text-gray-400 mb-12;
+  @apply text-base sm:text-lg md:text-xl text-center text-gray-600 dark:text-gray-400 px-4 max-w-2xl mx-auto;
 }
 
 .btn-primary {
@@ -275,5 +267,23 @@ const showNotification = (message, type) => {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Improved mobile responsiveness */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Ensure proper text sizing on very small screens */
+@media (max-width: 380px) {
+  .section-title {
+    @apply text-2xl;
+  }
+  
+  .section-subtitle {
+    @apply text-sm;
+  }
 }
 </style>
