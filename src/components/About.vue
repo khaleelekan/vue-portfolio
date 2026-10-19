@@ -9,7 +9,7 @@
       <div class="mb-16 text-center">
         <h2 class="section-title">About Me</h2>
         <p class="max-w-2xl mx-auto section-subtitle">
-          Full-Stack Developer & GIS Specialist crafting digital solutions that bridge technology and real-world applications
+          Full-Stack Developer & GIS Specialist Crafting digital solutions that bridge technology and real-world applications
         </p>
       </div>
       
